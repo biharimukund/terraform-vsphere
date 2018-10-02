@@ -14,4 +14,4 @@ pipelines:
                   command: bash
                   arguments:
                     - -c
-                    - make al
+                    - make all
