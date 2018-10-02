@@ -1,7 +1,7 @@
 PHONY: vars init plan apply all
 
 vars:
-	/home/jenkins/vars.sh
+	/home/jenkins/vars .
 init:
 	terraform init
 plan:
