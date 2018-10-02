@@ -1,0 +1,17 @@
+pipelines:
+  VM-creation:
+    group: terraform 
+    materials:
+      repo:
+        git: https://github.com/biharimukund/terraform-vsphere.git
+        branch: master
+    stages:
+    - create-vm:
+        jobs:
+          creating-vm:
+            tasks:
+              - exec:
+                  command: bash
+                  arguments:
+                    - -c
+                    - make al
