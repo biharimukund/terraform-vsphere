@@ -1,7 +1,7 @@
 PHONY: vars init plan apply all
 
 vars:
-	/home/jenkins/vars .
+	/home/jenkins/vars /var/lib/jenkins/workspace/terraform-vsphere/tf.vars 
 init:
 	terraform init
 plan:
